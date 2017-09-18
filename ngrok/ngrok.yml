@@ -1,0 +1,23 @@
+authtoken: 74BxEpBj8WsoGAZCcmQ2w_7mdXGBj8N5oyZVfaWfwem
+web_addr: 0.0.0.0:4040
+#console_ui: false
+tunnels:
+  test-basic:
+    proto: http
+    addr: 80
+    host_header: test-basic.dev
+  test-auth:
+    proto: http
+    addr: 80
+    auth: "demo:secret"
+    host_header: test-auth.dev
+  test-subdomain:
+    proto: http
+    addr: 80
+    subdomain: coding-berlin
+    host_header: subdomain.dev
+  test-no-inspect:
+    proto: http
+    addr: 80
+    inspect: false
+    host_header: test-no-inspect.dev
