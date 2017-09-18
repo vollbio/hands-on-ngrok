@@ -16,5 +16,3 @@ RUN cd /opt && \
     wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && \
     unzip ngrok-stable-linux-amd64.zip && \
     ln -s /opt/ngrok /usr/local/bin/ngrok
-
-#RUN ngrok authtoken 74BxEpBj8WsoGAZCcmQ2w_7mdXGBj8N5oyZVfaWfwem
