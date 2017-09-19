@@ -35,8 +35,7 @@ tunnels:
   test-reserved-wildcard-domain:
     proto: http
     addr: 80
-    hostname: ngrok.codingberlin.org
-    subdomain: bernd
+    hostname: bernd.ngrok.codingberlin.org
     host_header: bernd.ngrok.codingberlin.org
   test-no-inspect:
     proto: http
