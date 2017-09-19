@@ -76,13 +76,18 @@ ngrok http 80
 ngrok start test-basic
 ```  
 
+#### Start HTTPS-only tunnel  
+
+```
+ngrok start test-ssl-only
+```  
+
 #### Start HTTP tunnel with authentication
 
 ```
 ngrok start test-auth
 ```  
 Login: `demo`/`secret`
-
 
 #### Start multiple HTTP tunnels from config
 

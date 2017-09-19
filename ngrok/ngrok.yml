@@ -6,6 +6,11 @@ tunnels:
     proto: http
     addr: 80
     host_header: test-basic.dev
+  test-ssl-only:
+    proto: http
+    addr: 80
+    host_header: test-ssl-only.dev
+    bind_tls: true
   test-auth:
     proto: http
     addr: 80
@@ -15,7 +20,7 @@ tunnels:
     proto: http
     addr: 80
     subdomain: coding-berlin
-    host_header: subdomain.dev
+    host_header: coding-berlin.dev
   test-no-inspect:
     proto: http
     addr: 80
