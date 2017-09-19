@@ -1,5 +1,6 @@
 authtoken: 74BxEpBj8WsoGAZCcmQ2w_7mdXGBj8N5oyZVfaWfwem
 web_addr: 0.0.0.0:4040
+region: eu
 #console_ui: false
 tunnels:
   test-basic:
@@ -21,8 +22,31 @@ tunnels:
     addr: 80
     subdomain: coding-berlin
     host_header: coding-berlin.dev
+  test-reserved-domain:
+    proto: http
+    addr: 80
+    subdomain: ngrok.codingberlin.org
+    host_header: ngrok.codingberlin.org
+  test-reserved-domain:
+    proto: http
+    addr: 80
+    hostname: ngrok.codingberlin.org
+    host_header: ngrok.codingberlin.org
+  test-reserved-wildcard-domain:
+    proto: http
+    addr: 80
+    hostname: ngrok.codingberlin.org
+    subdomain: bernd
+    host_header: bernd.ngrok.codingberlin.org
   test-no-inspect:
     proto: http
     addr: 80
     inspect: false
     host_header: test-no-inspect.dev
+  test-internal-address:
+    proto: http
+    addr: 127.0.0.1:80
+    host_header: 127.0.0.1
+  test-external-address:
+    proto: http
+    addr: www.google.de:80
